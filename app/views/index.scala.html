@@ -1,0 +1,18 @@
+@import models.ViewHelpers.img
+@import models.ViewHelpers.faSvg
+
+@_l.main("Photo Albums", showNavBar = false){
+    <div class="nice-background-image" style="background-image: url('@img("img/march31/photo28.JPG", 2000, 2000, 70)')">
+
+        <h1>Hello Everybody!</h1>
+
+        <div class="down-button"><a href="#photo-cards">@faSvg(FontAwesomeIcon.AngleDown,FontAwesomeIcon.Fill.Light)</a></div>
+
+
+    </div>
+
+
+    <div id="photo-cards" class="photo-folders-container">
+        @_l.photoCard("img/november/1.jpeg","views/november.scala.html", "November" )
+    </div>
+}

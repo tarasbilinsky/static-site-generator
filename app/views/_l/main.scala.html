@@ -1,0 +1,64 @@
+@import ViewHelpers._
+@(
+        title: String,
+        showNavBar:Boolean = true,
+        googleAnalyticsTrackingOn:Boolean = true,
+        lightboxOn: Boolean = false,
+        bodyBackground: String = ""
+)(body: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>@title</title>
+
+        <link rel="stylesheet" href="@css("css/main.css")">
+        <link rel="stylesheet" href="@css("css/bootstrap-4.0.0.css")">
+        <link rel="stylesheet" href="@css("css/font-awesome-5.0.13.css")">
+
+        @if(lightboxOn){
+            <link rel="stylesheet" href="@css("css/light-box.css")">
+        }
+
+        @if(googleAnalyticsTrackingOn){
+            @_l.googleAnalyticsTrackingCode()
+        }
+    </head>
+    <body @if(!bodyBackground.isEmpty){style="background-image: url('@bodyBackground');"}>
+
+        @if(showNavBar) {
+
+
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" id="logo" href="@html("views/index.scala.html")#photo-cards"> @faSvg(FontAwesomeIcon.Home,FontAwesomeIcon.Fill.Solid) Home</a>
+
+
+                <div class="navbar-title">@faSvg("fas fa-camera-retro") @title</div>
+
+
+            </nav>
+
+        }
+
+
+        @body
+        <div class="copyright">
+            &copy; Marta Bilinska
+        </div>
+
+
+        <script src="@js("js/jquery-3.3.1.min.js")"></script>
+        @*<script src="@js("js/main.js")"></script>*@
+        @if(lightboxOn){
+            <script src="@js("js/light-box-2.10.0.js")"></script>
+            <script>
+                    lightbox.option({
+                        'resizeDuration': 200,
+                        'wrapAround': true,
+                        positionFromTop: 0,
+                        fitImagesInViewport: true
+                    });
+            </script>
+        }
+    </body>
+</html>

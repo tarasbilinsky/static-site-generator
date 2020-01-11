@@ -1,0 +1,9 @@
+@import ViewHelpers._
+@(imagePath:String, detailsPage:String, title:String)
+
+<div class="card" style="width: 18rem;">
+    <a href="@html(detailsPage)"><img class="card-img-top" src="@img(imagePath, width = 834, height = 626)" alt="@title"></a>
+    <div class="card-body">
+        <h5 class="card-title"><a href="@html(detailsPage)">@title</a></h5>
+    </div>
+</div>

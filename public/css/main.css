@@ -1,0 +1,135 @@
+
+.container{
+    background-color: inherit;
+    /*padding: 4em 0 4em 0;
+    margin: 3em;*/
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+body{
+    background-color: #ACE0D1 !important;
+}
+
+
+.photo-container{
+    padding: 0.5em ;
+    margin-top: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.photo-single{
+    padding: 0.8em;
+    vertical-align: center;
+    width: 50%;
+}
+
+.photo-single img{
+    width: 100%;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+
+
+.navbar  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+ .navbar a {
+    color: #10707f;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+a:hover{
+    color: #0c5460; !important;
+    
+}
+h5{
+    text-align: center;
+}
+
+.card-title a {
+    color: #1B7A8A !important
+}
+.card{
+    margin: 0.5em;
+    background-color: linen !important;
+    width: 18rem;
+    border: 0.3em solid linen !important;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+
+}
+
+.down-button{
+    text-align: center;
+}
+
+.down-button a{
+    color: white;
+}
+
+.down-button a:hover{
+    color: beige;
+}
+
+.down-button svg {
+    font-size: 15vh;
+}
+.navbar-brand svg{
+    color: #0c5460;
+}
+
+.photo-folders-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2em;
+    margin-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.navbar-brand {
+    font-size: 1.5rem !important;
+    margin-right: -20rem !important;
+}
+.card-title {
+    margin-bottom: 0 !important;
+}
+
+.nice-background-image {
+
+    background-size: cover;
+    height: 100vh;
+}
+
+.nice-background-image h1 {
+    color: white;
+    text-align: center;
+    font-size: 6vh;
+    padding: 45vh 0 30vh 0;
+}
+
+.copyright {
+    text-align: right;
+   font-size: x-small;
+    margin: 1em;
+}
+
+
+
+.navbar-title {
+    font-size: 1.5rem;
+    padding-right: 2em;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
