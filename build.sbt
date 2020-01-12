@@ -39,7 +39,7 @@ val wGetDir = settingKey[File]("WGet dir")
 wGetDir := new File(target.value + "/wget")
 
 val s3TargetBucket = settingKey[String]("s3 bucket")
-s3TargetBucket := "www.roofmaxxflorida.com"
+s3TargetBucket := "www.roofmacs.com"
 
 val runAndPublish = inputKey[Unit]("")
 val publishHook = taskKey[Seq[PlayRunHook]]("")
